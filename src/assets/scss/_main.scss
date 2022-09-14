@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app {
+  min-height: 100vh;
+  background: $primary-color;
+  background: linear-gradient(
+    180deg,
+    rgba(116, 83, 125, 1) 0%,
+    rgba(163, 129, 158, 1) 10%,
+    rgba(189, 155, 177, 1) 20%,
+    rgba(218, 191, 190, 1) 46%,
+    $secondary-color 100%
+  );
+}
+
+.icon-btn {
+  padding: 0;
+  border: none;
+  background-color: unset;
+  font-size: 18px;
+  color: $primary-color;
+  height: 18px;
+
+  &.active {
+    color: $secondary-color;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-top: 150px;
+
+  & .title {
+    font-size: 120px;
+    font-weight: 800;
+  }
+
+  & .subtitle {
+    font-size: 30px;
+    font-weight: 600;
+  }
+}

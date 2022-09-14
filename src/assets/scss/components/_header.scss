@@ -1,0 +1,18 @@
+.component-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: $distance-2;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: map-get($elevation, 50);
+  color: white;
+
+  & .title {
+    font-weight: 800;
+  }
+
+  & .credits {
+    font-size: 12px;
+    font-weight: 400;
+  }
+}
